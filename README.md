@@ -2,7 +2,7 @@
  
 ### Alumno: Mario Laurie Aravena
 
-**Analisis:**
+***Analisis:***
 
 Para el proyecto de blackjack se necesitarian 4 clases de acuerdo al contexto problema, las cuales serian:
 
@@ -22,6 +22,7 @@ Esta clase se usaria principalmente para ordenar atributos correspondientes al m
 
 Esta corresponderia a la clase usada para crear objetos con los atributos de "pinta", "indice" y "valor", para asi poder ingresarlos en solo un arreglo de cartas, ya sea en la baraja o en la mano del jugador, y asi acceder a los distintos parametros de la misma de manera mas facil.
 
+***Relaciones:***
 
 Con todo esto explicado podemos concluir que :
 
