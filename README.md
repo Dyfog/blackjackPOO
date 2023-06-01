@@ -29,3 +29,5 @@ Con todo esto explicado podemos concluir que :
 -La clase "Main" dependera/usara a la clase "Juego" para lanzar el mismo
 
 -La clase "Juego" dependera/usara a las clases "Jugador" y "Carta" para instanciar, conocer y modificar sus valores (este ultimo solo en el caso del jugador) para llevar a cabo el juego
+
+-La clase "Jugador" tendra una asociacion unidireccional hacia "Carta", ya que el jugador tiene como atributo una lista de cartas
