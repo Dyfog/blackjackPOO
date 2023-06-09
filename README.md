@@ -31,3 +31,8 @@ Con todo esto explicado podemos concluir que :
 -La clase "Juego" dependera/usara a las clases "Jugador" y "Carta" para instanciar, conocer y modificar sus valores (este ultimo solo en el caso del jugador) para llevar a cabo el juego
 
 -La clase "Jugador" tendra una asociacion unidireccional hacia "Carta", ya que el jugador tiene como atributo una lista de cartas
+
+
+***Contenido ayudantia 2:***
+
+Ya que el problema era reltaivamente simple, y el diagrama fue bien planteado desde un inicio, el modelo de clases y sus relaciones realmente no cambiaron, ademas comentar que como en primera ayudantia pensé que serian envios separados y no todo en un solo repositorio, subí esto en la rama main, para asi conservar el registro de los commits, tambien el codigo se hizo todo junto en intelIJ y luego se subío entero, pero la solucion planteada funciona sin problemas.
