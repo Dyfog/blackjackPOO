@@ -18,4 +18,9 @@ public class Carta {
 		return this.valor;
 	}
 
+	public Carta(String pinta, char indice, int valor) {
+		this.pinta = pinta;
+		this.indice = indice;
+		this.valor = valor;
+	}
 }
