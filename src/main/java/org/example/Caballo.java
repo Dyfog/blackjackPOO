@@ -1,19 +1,26 @@
-public class Caballo {
+package org.example;
 
+public class Caballo {
 	private int id;
-	private string color;
-	private string nombre;
+	private String color;
+	private String nombre;
+
 
 	public int getId() {
-		return this.id;
+		return id;
 	}
 
-	public string getColor() {
-		return this.color;
+	public String getColor() {
+		return color;
 	}
 
-	public string getNombre() {
-		return this.nombre;
+	public String getNombre() {
+		return nombre;
 	}
 
+	public Caballo(int id, String color, String nombre) {
+		this.id = id;
+		this.color = color;
+		this.nombre = nombre;
+	}
 }
