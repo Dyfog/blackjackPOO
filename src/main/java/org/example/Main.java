@@ -1,11 +1,12 @@
+package org.example;
+
 public class Main {
+
 	public static void main(String[] args) {
-
+		lanzar();
 	}
-
-	public void lanzar() {
-		// TODO - implement Main.lanzar
-		throw new UnsupportedOperationException();
+	public static void lanzar() {
+		SelectorJuego.ejecutar();
 	}
 
 }
