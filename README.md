@@ -47,3 +47,6 @@ Ya que el problema era reltaivamente simple, y el diagrama fue bien planteado de
 -Ya que se crearon clases nuevas que tenian nombres que podrian resultar confusos ahora que se ingresarian clases nuevas, modifique los nombres de la clase del juego de blackjack y su respectiva clase de jugador para que estas aludieran especificamente a que eran para el juego blackjack 
 
 -las relaciones entre todas estas nuevas clases serian de dependencia, ya que en ningun momento uso objetos de una clase como parametros de otra (o otras formas similares), tambien añadir que aunque vi una pequeña posibilidad de usar herencia en los jugadores de blackjack y bullseye, no concluí que uno fuera "un tipo de" respecto a la otra clase, y los atributos correspondientes no tenian similitudes entre si. por lo que no hice uso de herencia en este.
+
+-Luego de hacer todo el codigo aparecieron bastantes metodos que no tenia considerando en un inicio y tambien se añadio un atributo a la clase del jugador de bullseye, para asi poder mejorar la interaccion con el juego, por lo que si bien hacer el diagrama y generar codigo ayudo y acelero mucho el desarrollo, pudo ser mejor.
+-
