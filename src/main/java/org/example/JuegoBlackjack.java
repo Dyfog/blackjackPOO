@@ -3,13 +3,14 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Juego {
+public class JuegoBlackjack {
 
 	public static void jugar(){
+		System.out.println("Recuerde que en cada partida usted es el jugador 1 (J1)");
 		ArrayList<Carta> naipe = crearNaipe();
 		Collections.shuffle(naipe);
-		Jugador ji = new Jugador();
-		Jugador j2 = new Jugador();
+		JugadorBlackjack ji = new JugadorBlackjack();
+		JugadorBlackjack j2 = new JugadorBlackjack();
 		ji = repartirInicial(ji, naipe);
 		naipe = removerCartas(3,naipe);
 		j2 = repartirInicial(j2, naipe);
@@ -43,18 +44,18 @@ public class Juego {
 	}
 
 	/**
-	 * 
-	 * @param jugador
+	 *
+	 * @param jugadorBlackjack
 	 */
-	public static Jugador repartirInicial(Jugador jugador,ArrayList<Carta> naipe) {
+	public static JugadorBlackjack repartirInicial(JugadorBlackjack jugadorBlackjack, ArrayList<Carta> naipe) {
 		for (int i = 0; i<3 ; i++){
-			jugador.añadirCarta(naipe.get(i));
+			jugadorBlackjack.añadirCarta(naipe.get(i));
 		}
-		return jugador;
+		return jugadorBlackjack;
 	}
 
 
-	public static void seleccionarGanador(Jugador j1, Jugador j2) {
+	public static void seleccionarGanador(JugadorBlackjack j1, JugadorBlackjack j2) {
 
 		if (j1.getPuntos()>21 && j2.getPuntos()>21){
 			System.out.println("Ambos jugadores pierden, la casa gana");
@@ -62,6 +63,8 @@ public class Juego {
 			System.out.println("El jugador 1 gana");
 		} else if (j1.getPuntos()>21 && j2.getPuntos()<=21) {
 			System.out.println("El jugador 2 gana");
+		} else if (j1.getPuntos() == j2.getPuntos()) {
+			System.out.println("empate, la casa gana");
 		} else if (j1.getPuntos()> j2.getPuntos()) {
 			System.out.println("El jugador 1 gana");
 		}else {

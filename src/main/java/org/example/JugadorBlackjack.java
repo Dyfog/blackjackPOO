@@ -2,12 +2,12 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class Jugador {
+public class JugadorBlackjack {
 
 	private ArrayList<Carta> mano;
 	private int puntos;
 
-	public Jugador() {
+	public JugadorBlackjack() {
 		mano = new ArrayList<Carta>();
 		this.puntos = 0;
 	}

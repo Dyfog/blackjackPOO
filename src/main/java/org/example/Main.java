@@ -6,7 +6,7 @@ public class Main {
 		lanzar();
 	}
 	public static void lanzar() {
-		Juego.jugar();
+		SelectorJuego.ejecutar();
 	}
 
 }
