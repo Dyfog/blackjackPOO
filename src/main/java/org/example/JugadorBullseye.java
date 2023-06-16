@@ -1,18 +1,28 @@
+package org.example;
+
 public class JugadorBullseye {
-
-	private string nombre;
 	private int dineroRestante;
-
-	public string getNombre() {
-		return this.nombre;
-	}
+	private String nombre;
+	private int idCaballoElegido;
 
 	public int getDineroRestante() {
-		return this.dineroRestante;
+		return dineroRestante;
 	}
 
 	public void setDineroRestante(int dineroRestante) {
 		this.dineroRestante = dineroRestante;
 	}
 
+	public JugadorBullseye(String nombre) {
+		this.dineroRestante = 50000;
+		this.nombre = nombre;
+	}
+
+	public int getIdCaballoElegido() {
+		return idCaballoElegido;
+	}
+
+	public void setIdCaballoElegido(int idCaballoElegido) {
+		this.idCaballoElegido = idCaballoElegido;
+	}
 }

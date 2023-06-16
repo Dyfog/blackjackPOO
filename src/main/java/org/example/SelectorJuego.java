@@ -1,10 +1,19 @@
-public class SelectorJuego {
+package org.example;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class SelectorJuego {
 	public static void opcionesJuegos() {
 		System.out.println("A continuación, puede elegir un juego de los siguientes para comenzar");
 		System.out.println("1. Blackjack");
 		System.out.println("2. Bullseye");
 		System.out.println("3. Salir");
+	}
+
+	public static void ejecutar() {
+		bienvenida();
+		eleccionJuego();
 	}
 
 	public static void eleccionJuego() {
@@ -26,6 +35,7 @@ public class SelectorJuego {
 				in.nextLine();
 			}
 		}
+
 		switch (eleccion) {
 			case 1:
 				JuegoBlackjack.jugar();
@@ -43,10 +53,4 @@ public class SelectorJuego {
 	public static void bienvenida() {
 		System.out.println("Le damos la bienvenida al casino Deluxe!");
 	}
-
-	public static void ejecutar() {
-		bienvenida();
-		eleccionJuego();
-	}
-
 }
