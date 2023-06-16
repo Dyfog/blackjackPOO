@@ -1,8 +1,10 @@
 public class Util {
 
-	public boolean validarRango() {
-		// TODO - implement Util.validarRango
-		throw new UnsupportedOperationException();
+	public static boolean validarRango(int num, int min, int max) {
+		if (num < min || num > max) {
+			return false;
+		}
+		return true;
 	}
 
 }
