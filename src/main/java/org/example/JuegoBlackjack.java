@@ -1,6 +1,6 @@
 public class JuegoBlackjack {
 
-	public Jugador crearJugador() {
+	public JugadorBlackjack crearJugador() {
 		// TODO - implement JuegoBlackjack.crearJugador
 		throw new UnsupportedOperationException();
 	}
@@ -19,7 +19,7 @@ public class JuegoBlackjack {
 	 * 
 	 * @param jugadores
 	 */
-	public Jugador[] repartirInicial(Jugador[] jugadores) {
+	public JugadorBlackjack[] repartirInicial(JugadorBlackjack[] jugadores) {
 		// TODO - implement JuegoBlackjack.repartirInicial
 		throw new UnsupportedOperationException();
 	}
@@ -28,7 +28,7 @@ public class JuegoBlackjack {
 	 * 
 	 * @param jugador
 	 */
-	public int calcularPuntosJugador(Jugador jugador) {
+	public int calcularPuntosJugador(JugadorBlackjack jugador) {
 		// TODO - implement JuegoBlackjack.calcularPuntosJugador
 		throw new UnsupportedOperationException();
 	}
@@ -37,7 +37,7 @@ public class JuegoBlackjack {
 	 * 
 	 * @param jugadores
 	 */
-	public Jugador seleccionarGanador(Jugador[] jugadores) {
+	public JugadorBlackjack seleccionarGanador(JugadorBlackjack[] jugadores) {
 		// TODO - implement JuegoBlackjack.seleccionarGanador
 		throw new UnsupportedOperationException();
 	}

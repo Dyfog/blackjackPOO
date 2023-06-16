@@ -1,4 +1,4 @@
-public class Jugador {
+public class JugadorBlackjack {
 
 	private Carta[] mano;
 	private int puntos;
