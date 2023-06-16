@@ -63,6 +63,8 @@ public class JuegoBlackjack {
 			System.out.println("El jugador 1 gana");
 		} else if (j1.getPuntos()>21 && j2.getPuntos()<=21) {
 			System.out.println("El jugador 2 gana");
+		} else if (j1.getPuntos() == j2.getPuntos()) {
+			System.out.println("empate, la casa gana");
 		} else if (j1.getPuntos()> j2.getPuntos()) {
 			System.out.println("El jugador 1 gana");
 		}else {
