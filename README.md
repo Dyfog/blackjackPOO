@@ -50,3 +50,11 @@ Ya que el problema era reltaivamente simple, y el diagrama fue bien planteado de
 
 -Luego de hacer todo el codigo aparecieron bastantes metodos que no tenia considerando en un inicio y tambien se añadio un atributo a la clase del jugador de bullseye, para asi poder mejorar la interaccion con el juego, por lo que si bien hacer el diagrama y generar codigo ayudo y acelero mucho el desarrollo, pudo ser mejor.
 
+
+***Contenido ayudantia 4:***
+
+-En esta nueva ayudantia se implementaron 3 clases más, 1 ventana principal y 1 ventana por cada juego (2), pero se elimino 1 clase que era el selector de juego, ya que esta operaba como entrada/salida de las opciones de juego preeliminarmente
+
+-se hicieron nuevos metodos en la clase del juego de bulleye ya que como muchos de los metodos contenian muchos prints o elecciones, se prefirio hacer metodos nuevos para las ventanas, los cuales hacer mayor uso de return de Strings e ints que de prints para el usuario.
+
+-tambien se hicieron los botones para volver y se usaron listas de elecciones para asi usar su indice de eleccion y ocuparlos como datos normales, tambien se valido que para que el boton funcionara, tenia que haber elegido en todas las listas un valor, para que funcionara correctamnte.
