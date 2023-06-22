@@ -6,7 +6,8 @@ public class Main {
 		lanzar();
 	}
 	public static void lanzar() {
-		SelectorJuego.ejecutar();
+		VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+		ventanaPrincipal.setVisible(true);
 	}
 
 }
