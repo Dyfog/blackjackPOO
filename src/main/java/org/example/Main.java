@@ -3,11 +3,11 @@ package org.example;
 public class Main {
 
 	public static void main(String[] args) {
-		VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
-		ventanaPrincipal.setVisible(true);
+		lanzar();
 	}
 	public static void lanzar() {
-		SelectorJuego.ejecutar();
+		VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+		ventanaPrincipal.setVisible(true);
 	}
 
 }

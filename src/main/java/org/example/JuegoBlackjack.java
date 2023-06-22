@@ -79,11 +79,11 @@ public class JuegoBlackjack {
 		if (j1.getPuntos()>21 && j2.getPuntos()>21){
 			return "Ambos jugadores pierden, la casa gana";
 		} else if (j1.getPuntos()<=21 && j2.getPuntos()>21) {
-			return "El jugador 1 gana";
+			return "Usted ha Ganado";
 		} else if (j1.getPuntos()>21 && j2.getPuntos()<=21) {
 			return "El jugador 2 gana";
 		} else if (j1.getPuntos()> j2.getPuntos()) {
-			return "El jugador 1 gana";
+			return "Usted ha Ganado";
 		}else {
 			return "El jugador 2 gana";
 		}
