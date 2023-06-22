@@ -169,6 +169,7 @@ public class JuegoBullseye {
 		System.out.println("6.-$50000: Si gana se aplica un multiplicador x10.");
 	}
 
+
 	public static boolean preguntarSeguirJugando(){
 		Scanner in = new Scanner(System.in);
 		int eleccion = 1;

@@ -38,6 +38,17 @@ public class VentanaPrincipal extends JFrame implements ActionListener{
 
         this.add(panel);
 
+        botonBullseye.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                VentanaBullseye vBullseye = new VentanaBullseye(VentanaPrincipal.this);
+                vBullseye.mostrarCaballos(JuegoBullseye.crearCaballos());
+                vBullseye.mostrarApuestas();
+                VentanaPrincipal.this.setVisible(false);
+                vBullseye.setVisible(true);
+            }
+        });
+
         botonBlackjack.addActionListener(new ActionListener() {
 
             @Override
