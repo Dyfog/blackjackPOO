@@ -5,8 +5,7 @@ import java.util.Collections;
 
 public class JuegoBlackjack {
 
-	public static void jugar(){
-		System.out.println("Recuerde que en cada partida usted es el jugador 1 (J1)");
+	public static String jugar(){
 		ArrayList<Carta> naipe = crearNaipe();
 		Collections.shuffle(naipe);
 		JugadorBlackjack ji = new JugadorBlackjack();
@@ -21,7 +20,7 @@ public class JuegoBlackjack {
 		j2.actualizarPuntos();
 		System.out.println("puntos j1: "+ji.getPuntos());
 		System.out.println("puntos j2: "+j2.getPuntos());
-		seleccionarGanador(ji,j2);
+		return retornarGanador(ji,j2);
 
 
 	}
@@ -55,7 +54,7 @@ public class JuegoBlackjack {
 	}
 
 
-	public static void seleccionarGanador(JugadorBlackjack j1, JugadorBlackjack j2) {
+	public static void MostrarGanador(JugadorBlackjack j1, JugadorBlackjack j2) {
 
 		if (j1.getPuntos()>21 && j2.getPuntos()>21){
 			System.out.println("Ambos jugadores pierden, la casa gana");
@@ -63,8 +62,6 @@ public class JuegoBlackjack {
 			System.out.println("El jugador 1 gana");
 		} else if (j1.getPuntos()>21 && j2.getPuntos()<=21) {
 			System.out.println("El jugador 2 gana");
-		} else if (j1.getPuntos() == j2.getPuntos()) {
-			System.out.println("empate, la casa gana");
 		} else if (j1.getPuntos()> j2.getPuntos()) {
 			System.out.println("El jugador 1 gana");
 		}else {
@@ -78,5 +75,17 @@ public class JuegoBlackjack {
 		}
 		return naipe;
 	}
-
+	public static String retornarGanador (JugadorBlackjack j1, JugadorBlackjack j2){
+		if (j1.getPuntos()>21 && j2.getPuntos()>21){
+			return "Ambos jugadores pierden, la casa gana";
+		} else if (j1.getPuntos()<=21 && j2.getPuntos()>21) {
+			return "El jugador 1 gana";
+		} else if (j1.getPuntos()>21 && j2.getPuntos()<=21) {
+			return "El jugador 2 gana";
+		} else if (j1.getPuntos()> j2.getPuntos()) {
+			return "El jugador 1 gana";
+		}else {
+			return "El jugador 2 gana";
+		}
+	}
 }
