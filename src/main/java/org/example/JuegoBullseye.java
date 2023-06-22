@@ -194,4 +194,52 @@ public class JuegoBullseye {
 		if (eleccion==2){seguirJugando=false;}
 		return seguirJugando;
 	}
+
+	public static boolean jugarBullseyeVentana(int indiceCaballoElegido){
+		int idCaballoGanador = (int)(Math.random()*6+1);
+		if (indiceCaballoElegido+1==idCaballoGanador){
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	public static int determinarMultiplicadorVentana(int indice){
+		switch (indice+1){
+			case 1:
+				return 2;
+			case 2:
+				return 3;
+			case 3:
+				return 4;
+			case 4:
+				return 5;
+			case 5:
+				return 7;
+			case 6:
+				return 10;
+		}
+		return 0;
+	}
+
+	public static int determinarValorApuestaVentana(int indice){
+		switch (indice+1){
+			case 1:
+				return 500;
+			case 2:
+				return 1000;
+			case 3:
+				return 5000;
+			case 4:
+				return 10000;
+			case 5:
+				return 25000;
+			case 6:
+				return 50000;
+		}
+		return 0;
+	}
+
+
+
 }
